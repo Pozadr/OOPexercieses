@@ -61,7 +61,7 @@ public class Person {
         else return 0;
     }
 
-    static public int ageDiferenceBetweenTwoPeople(Person first, Person second){
+    static public int ageDifferenceBetweenTwoPeople(Person first, Person second){
         return Math.abs(first.getAge() - second.getAge());
     }
 
