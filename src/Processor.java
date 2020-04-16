@@ -22,4 +22,11 @@ public class Processor {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Processor{" +
+                "name='" + name + '\'' +
+                ", cores=" + cores +
+                '}';
+    }
 }

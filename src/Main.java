@@ -21,7 +21,8 @@ public class Main {
 
         System.out.println("\n----- Computer Class -----");
         Computer my1stPc = new Computer("MSI MPG X570 Gaming Plus ",
-                "Procesor AMD Ryzen 5 3600 ", 6, 16);
+                new Processor("AMD Hiperduper X899", 100),
+                16);
         my1stPc.setMonitor("Monitor LG 27GL850-B");
         my1stPc.setHd(240);
         my1stPc.setPrinter("Brother DCP 7055");

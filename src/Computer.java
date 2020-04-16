@@ -2,18 +2,17 @@ public class Computer {
 
     // obowiązkowe pola
     private String motherboard; // płyta główna
-    private String processor; // "i5", "i7", "intel", "amd"
-    private int cores; // liczba rdzeni
+    private Processor processor; // "i5", "i7", "intel", "amd"
     private int ram; // ilość ramu
+
     // dodatkowe pola
     private int hd; // wielkość dysku w GB
     private String monitor; // nazwa preducenta
     private String printer; // nazwa drukarki
 
-    public Computer(String motherboard, String processor, int cores, int ram) {
+    public Computer(String motherboard, Processor processor, int ram) {
         this.motherboard = motherboard;
         this.processor = processor;
-        this.cores = cores;
         this.ram = ram;
     }
 
@@ -21,8 +20,7 @@ public class Computer {
     public String toString() {
         return "Computer{" +
                 "motherboard='" + motherboard + '\'' +
-                ", processor='" + processor + '\'' +
-                ", cores=" + cores +
+                ", processor='" + processor.toString() + '\'' +
                 ", ram=" + ram +
                 ", hd=" + hd +
                 ", monitor='" + monitor + '\'' +
