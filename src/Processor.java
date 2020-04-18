@@ -1,9 +1,12 @@
 public class Processor {
     private String name; // nazwa procesora
     private int cores; // liczba rdzeni
-    public Processor(String name, int cores){
+    private int clockSpeed;
+
+    public Processor(String name, int cores, int clockSpeed){
         this.name = name;
         this.cores = cores;
+        this.clockSpeed = clockSpeed;
     }
 
     public String getName() {
