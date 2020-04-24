@@ -39,14 +39,15 @@ public class Main {
                 new HardDrive("FreeSlot", 0, 0,
                         0));
 
-        my1stPc.setMonitor("Monitor LG 27GL850-B");
         my1stPc.setHardDriveSlot(new HardDrive("Test Hard Drive",
                 999, 999,999));
-        my1stPc.setPrinter("Brother DCP 7055");
+
+        my1stPc.setMonitor(new Monitor("Monitor LG 27GL850-B", 27,
+                "OLED"));
+        my1stPc.setPrinter(new Printer("Brother DCP 7055", "600x600",true));
         System.out.println(my1stPc.toString());
         //my1stPc.setRamSlot(new Ram("SuperRam",1500, 9999));
         //System.out.println(my1stPc.toString());
-
 
     }
 }

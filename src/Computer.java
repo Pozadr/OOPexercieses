@@ -26,6 +26,14 @@ public class Computer {
         this.hardDriveSlots[2] = hdSlot3;
     }
 
+    public void setMonitor(Monitor monitor) {
+        this.monitor = monitor;
+    }
+
+    public void setPrinter(Printer printer) {
+        this.printer = printer;
+    }
+
     // change free slot or worse than input one
     public void setRamSlot(Ram ram){
         int dataWrittenFlag = 0;
@@ -94,5 +102,15 @@ public class Computer {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "motherboard='" + motherboard + '\'' +
+                ", processor=" + processor +
+                ", ramSlots=" + Arrays.toString(ramSlots) +
+                ", hardDriveSlots=" + Arrays.toString(hardDriveSlots) +
+                ", monitor=" + monitor +
+                ", printer=" + printer +
+                '}';
+    }
 }

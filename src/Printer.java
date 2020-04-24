@@ -1,9 +1,9 @@
 public class Printer {
     private String name;
-    private int resolution;
+    private String resolution;
     private boolean colorful;
 
-    public Printer(String name,int resolution, boolean colorful){
+    public Printer(String name, String resolution, boolean colorful){
         this.name = name;
         this.resolution = resolution;
         this.colorful = colorful;
@@ -13,7 +13,7 @@ public class Printer {
         return name;
     }
 
-    public int getResolution() {
+    public String getResolution() {
         return resolution;
     }
     // getter for boolean variable
@@ -21,7 +21,7 @@ public class Printer {
         return colorful;
     }
 
-    public void setResolution(int resolution) {
+    public void setResolution(String resolution) {
         this.resolution = resolution;
     }
 
@@ -31,6 +31,15 @@ public class Printer {
 
     public void setColorful(boolean colorful) {
         this.colorful = colorful;
+    }
+
+    @Override
+    public String toString() {
+        return "Printer{" +
+                "name='" + name + '\'' +
+                ", resolution=" + resolution +
+                ", colorful=" + colorful +
+                '}';
     }
 }
 
