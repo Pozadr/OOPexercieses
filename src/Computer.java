@@ -9,8 +9,8 @@ public class Computer {
     private HardDrive[] hardDriveSlots = new HardDrive[3];
 
     // dodatkowe pola
-    private String monitor; // nazwa preducenta
-    private String printer; // nazwa drukarki
+    private Monitor monitor; // nazwa preducenta
+    private Printer printer; // nazwa drukarki
 
     public Computer(String motherboard, Processor processor, Ram ramSlot1,
                     Ram ramSlot2, Ram ramSlot3, Ram ramSlot4, HardDrive hdSlot1,
@@ -24,26 +24,6 @@ public class Computer {
         this.hardDriveSlots[0] = hdSlot1;
         this.hardDriveSlots[1] = hdSlot2;
         this.hardDriveSlots[2] = hdSlot3;
-    }
-
-    @Override
-    public String toString() {
-        return "Computer{" +
-                "motherboard='" + motherboard + '\'' +
-                ", processor=" + processor +
-                ", ramSlots=" + Arrays.toString(ramSlots) +
-                ", hardDriveSlots=" + Arrays.toString(hardDriveSlots) +
-                ", monitor='" + monitor + '\'' +
-                ", printer='" + printer + '\'' +
-                '}';
-    }
-
-    public void setMonitor(String monitor) {
-        this.monitor = monitor;
-    }
-
-    public void setPrinter(String printer) {
-        this.printer = printer;
     }
 
     // change free slot or worse than input one
